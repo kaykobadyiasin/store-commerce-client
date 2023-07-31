@@ -13,10 +13,10 @@ const Navber = () => {
         <li className='lg:mr-5'><NavLink className='text-lg' to='/contact'>Contact</NavLink></li>
         <div className='flex items-center lg:mr-5'>
             <li>
-                <NavLink className='text-lg relative' to='/cart'>
+                <Link className='text-lg relative' to='/cart'>
                     <FaCartShopping className='text-3xl'></FaCartShopping>
                     <div className='bg-primary absolute -top-1 right-0 w-[25px] h-[25px] rounded-full flex items-center justify-center text-sm text-white'>0</div>
-                </NavLink></li>
+                </Link></li>
         </div>
         {user ?
             <div className='btn btn-primary hover:bg-transparent border-2 text-white hover:text-primary'><Link className='hover:bg-transparent hover:text-primary' to='/'>Sign Out</Link></div>

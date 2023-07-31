@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Feature from '../Feature/Feature';
 
+
 const Features = () => {
 
     const [features, setFeatures] = useState([]);
 
     useEffect(() => {
         fetch('electronicProducts.json')
-        .then(res => res.json())
-        .then(data => setFeatures(data))
+            .then(res => res.json())
+            .then(data => setFeatures(data))
     }, [])
 
     return (
@@ -20,8 +21,8 @@ const Features = () => {
             <div className='justify-center grid lg:grid-cols-3 md:grid-cols-2 gap-8 mx-10'>
                 {
                     features.map(feature => <Feature
-                    key={feature._id}
-                    feature={feature}
+                        key={feature._id}
+                        feature={feature}
                     ></Feature>)
                 }
             </div>

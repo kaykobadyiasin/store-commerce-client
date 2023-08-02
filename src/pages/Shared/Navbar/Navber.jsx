@@ -41,7 +41,7 @@ const Navber = () => {
                     <div>
                         <Link to='/' className="upper-case text-3xl font-bold">
                             <div className='flex items-center'>
-                                <div className='w-16'>
+                                <div className='w-16 mr-2'>
                                     <img src="/fav.png" alt="" />
                                 </div>
                                 <p>Store <span className='text-primary'>Commerce</span></p>

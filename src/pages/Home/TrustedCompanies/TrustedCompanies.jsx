@@ -2,7 +2,7 @@ import React from 'react';
 
 const TrustedCompanies = () => {
     return (
-        <div className='bg-slate-100 my-10'>
+        <div className='bg-slate-100 my-20'>
             <div className='container mx-auto py-10'>
                 <h2 className='text-center text-3xl font-semibold py-5'>Trusted Companies</h2>
                 <div className='lg:flex grid items-center justify-center lg:gap-40 gap-10'>

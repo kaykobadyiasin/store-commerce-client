@@ -48,12 +48,12 @@ const Products = () => {
             <div className="lg:w-7/12 w-full md:w-11/12 mx-auto">
                 <div className='lg:hero-content lg:gap-40 justify-between'>
                     <div className='hero-content lg:gap-20 justify-between'>
-                        <div className="join ">
-                            <input className="input input-bordered join-item lg:w-full w-8/12" placeholder="Search" />
+                        <div className="join w-full">
+                            <input className="input input-bordered join-item lg:w-full w-8/12 " placeholder="Search" />
                             <button className="btn join-item rounded-r-full"><FaSearch></FaSearch></button>
                         </div>
                         <div className=''>
-                            <label className="swap swap- text-9xl w-full">
+                            <label className="swap text-9xl w-full">
                                 <input type="checkbox" />
                                 <div onClick={() => toggleGrid()} className="swap-on text-[30px] bg-slate-200 rounded-md p-1"> <FaMicrosoft></FaMicrosoft> </div>
                                 <div onClick={() => toggleGrid()} className="swap-off text-[30px] bg-slate-200 rounded-md p-1"><FaTableList></FaTableList></div>
@@ -71,7 +71,7 @@ const Products = () => {
                 </div>
 
             </div>
-            <div className='lg:w-7/12 w-full mx-auto'>
+            <div className=' xl:w-8/12 lg:w-full md:w-full w-full mx-auto'>
                 <div className={displayType ? 'lg:gap-10 justify-between items-start hero-content' : 'lg:gap-10 justify-items-stretch items-start hero-content'}>
                     <div className='lg:block hidden leading-9'>
                         <div className='mb-8 w-44'>
@@ -94,7 +94,7 @@ const Products = () => {
                     <div className=''>
 
                         {displayType ? <>
-                            <div className='justify-center grid lg:grid-cols-3 md:grid-cols-2 lg:gap-10 md:gap-6 gap-6'>
+                            <div className='justify-center grid lg:grid-cols-3 md:grid-cols-2 xl:gap-10 lg:gap-5 md:gap-6 gap-6'>
                                 {
                                     products.map(product => <>
                                         <div className="card lg:w-full w-full md:w-full min-h-full card-compact bg-base-100 shadow-xl">

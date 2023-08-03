@@ -48,7 +48,7 @@ const Products = () => {
             <div className="lg:w-7/12 w-full md:w-11/12 mx-auto">
                 <div className='xl:hero-content lg:flex-wrap md:hero-content lg:gap-0 md:gap-40 justify-between'>
                     <div className='hero-content lg:gap-20 justify-between'>
-                        <div className="join w-full">
+                        <div className="join w-full lg:w-60 md:w-60">
                             <input className="input input-bordered join-item lg:w-full w-8/12 " placeholder="Search" />
                             <button className="btn join-item rounded-r-full"><FaSearch></FaSearch></button>
                         </div>
@@ -64,7 +64,7 @@ const Products = () => {
                         <div className='shrink-0 lg:w-44'>
                             <h3 className='text-xl'>Total Product {products.length}</h3>
                         </div>
-                        <div className='lg:flex-none lg:w-48 lg:z-50'>
+                        <div className='lg:flex-none lg:w-48 md:w-40 lg:z-50'>
                             <Select className="w-full" options={options}/>
                         </div>
                     </div>

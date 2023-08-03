@@ -46,7 +46,7 @@ const Products = () => {
     return (
         <div className='min-h-screen my-5 mx-5'>
             <div className="lg:w-7/12 w-full md:w-11/12 mx-auto">
-                <div className='lg:hero-content lg:gap-40 justify-between'>
+                <div className='xl:hero-content lg:flex-wrap md:hero-content lg:gap-0 md:gap-40 justify-between'>
                     <div className='hero-content lg:gap-20 justify-between'>
                         <div className="join w-full">
                             <input className="input input-bordered join-item lg:w-full w-8/12 " placeholder="Search" />

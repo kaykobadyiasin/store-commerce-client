@@ -1,4 +1,4 @@
-import React from 'react';
+ 
 import { FaCartFlatbedSuitcase, FaHandHoldingDollar, FaShield, FaShieldHalved } from "react-icons/fa6";
 
 const Service = () => {

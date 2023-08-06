@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { useState } from 'react';
 import { FaMicrosoft, FaTableList } from "react-icons/fa6";
@@ -8,7 +8,7 @@ import Select from 'react-select'
 const Products = () => {
 
     const gridView = 'grid';
-    const listView = 'list';
+    // const listView = 'list';
 
     const [displayType, setDisplayType] = useState(false);
 
@@ -88,6 +88,25 @@ const Products = () => {
                         <div>
                             <h2 className='text-xl font-semibold mb-4'>Company</h2>
                             <Select className="w-full" options={options2} />
+                        </div>
+                        <div className='mt-8'>
+                            <h2 className='text-xl font-semibold mb-4'>Colors</h2>
+                            <div className='flex items-center gap-4'>
+                                <span>All</span>
+                                <div className='w-6 h-6 border-2 p-1 bg-warning rounded-full'></div>
+                                <div className='w-6 h-6 border-2 p-1 bg-red-400 rounded-full'></div>
+                                <div className='w-6 h-6 border-2 p-1 bg-secondary rounded-full'></div>
+                                <div className='w-6 h-6 border-2 p-1 bg-secondary-content rounded-full'></div>
+                                <div className='w-6 h-6 border-2 p-1 bg-base-100 rounded-full'></div>
+                            </div>
+                        </div>
+                        <div className='mt-8'>
+                            <h2 className='text-xl font-semibold mb-4'>Price</h2>
+                            <span className='text-lg'>$50,000,00</span>
+                            <input type="range" min={0} max="100" value="40" className="range range-primary" />
+                        </div>
+                        <div className='mt-8'>
+                            <button className='btn btn-primary text-white'>Clear Filters</button>
                         </div>
 
                     </div>

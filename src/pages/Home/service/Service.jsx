@@ -24,7 +24,6 @@ const Service = () => {
                         <div className='flex justify-center'><FaShieldHalved className='text-3xl'></FaShieldHalved></div>
                         <h2 className='text-md mt-2'>Super Sucure Payment System</h2>
                     </div>
-
                 </div>
             </div>
         </div>
